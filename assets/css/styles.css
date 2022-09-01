@@ -1,3 +1,27 @@
-* {
-  background-color: red;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  background-color: gray;
+}
+:root {
+  --header: #f9f8f8;
+}
+
+body {
+  min-height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid;
+  background-color: var(--header);
+}
+.navbar {
+}
+.social-icons {
 }
