@@ -13,6 +13,8 @@ html {
   --borderline: #e8e8e8;
   --mainbody: #f5f4f4;
   --iconsfont: #aaaaaa;
+  --pagebutton: #ca5c3c;
+  --pagebuttonwhite1: #f3f2f2;
 }
 
 body {
@@ -21,7 +23,7 @@ body {
   margin: 0;
   background-color: var(--mainbody);
 }
-.header {
+header {
   display: flex;
   border-bottom: 1px solid var(--borderline);
   background-color: var(--header);
@@ -67,5 +69,86 @@ body {
 .nav1 {
   align-content: center;
 }
-.social-icons > a.fa-solid.fa-magnifying-glass {
+.article-blocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100px;
+  position: relative;
+  list-style-type: none;
+  width: 750px;
+  padding: 0;
+  margin-left: 150px;
+  margin-top: 52px;
+  margin-bottom: 0px;
+}
+.article1 {
+  height: 920px;
+  margin-bottom: 50px;
+  background-color: orangered;
+}
+.article2 {
+  height: 925px;
+  margin-bottom: 51px;
+  background-color: plum;
+}
+.article3 {
+  height: 949px;
+  margin-bottom: 50px;
+  background-color: greenyellow;
+}
+.article4 {
+  height: 923px;
+  background-color: olivedrab;
+  margin-bottom: 48px;
+}
+.page-buttons {
+  display: flex;
+  padding: 0;
+  margin-left: 150px;
+}
+.button1 {
+  background-color: var(--pagebutton);
+  height: 34px;
+  width: 32px;
+  border: none;
+  color: var(--pagebuttonwhite1);
+  font-family: "Oswald";
+  font-size: 15.5px;
+}
+.button2 {
+  background-color: #ffffff;
+  height: 35px;
+  width: 35px;
+  border: none;
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 15.5px;
+}
+.button3 {
+  background-color: #ffffff;
+  height: 35px;
+  width: 35px;
+  border: none;
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 15.5px;
+}
+.button4 {
+  background-color: #ffffff;
+  height: 35px;
+  width: 35px;
+  border: none;
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 15.5px;
+}
+.button5 {
+  background-color: #ffffff;
+  height: 35px;
+  width: 35px;
+  border: none;
+  color: #000000;
+  font-family: "Oswald";
+  font-size: 15.5px;
 }
