@@ -228,3 +228,8 @@ main {
   margin-bottom: 1px;
   width: 42px;
 }
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
