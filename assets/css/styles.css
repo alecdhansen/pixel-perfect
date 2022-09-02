@@ -6,22 +6,66 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  background-color: gray;
 }
 :root {
   --header: #f9f8f8;
+  --navbarfont: #444444;
+  --borderline: #e8e8e8;
+  --mainbody: #f5f4f4;
+  --iconsfont: #aaaaaa;
 }
 
 body {
   min-height: 100vh;
+  border: 0;
+  margin: 0;
+  background-color: var(--mainbody);
 }
-header {
+.header {
   display: flex;
-  justify-content: center;
-  border-bottom: 2px solid;
+  border-bottom: 1px solid var(--borderline);
   background-color: var(--header);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 61px;
 }
 .navbar {
+  width: 375px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--header);
+  position: relative;
+  display: flex;
+  margin-left: 150px;
+  padding: 0 1px;
+}
+.navbar > a {
+  text-decoration: none;
+  color: var(--navbarfont);
+  font-family: "Lato", sans-serif;
+  font-size: 11px;
+  margin: 0;
+  width: 100;
+  letter-spacing: 1px;
 }
 .social-icons {
+  width: 151px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--header);
+  position: relative;
+  display: flex;
+  margin-left: 610px;
+  padding: 0 1px;
+}
+.social-icons > a {
+  text-decoration: none;
+  color: var(--iconsfont);
+  font-size: 13px;
+}
+.nav1 {
+  align-content: center;
+}
+.social-icons > a.fa-solid.fa-magnifying-glass {
 }
