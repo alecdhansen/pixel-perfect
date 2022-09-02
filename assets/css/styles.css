@@ -15,6 +15,7 @@ html {
   --iconsfont: #aaaaaa;
   --pagebutton: #ca5c3c;
   --pagebuttonwhite1: #f3f2f2;
+  --pagebuttonborder: #eeeeee;
 }
 
 body {
@@ -27,81 +28,136 @@ header {
   display: flex;
   border-bottom: 1px solid var(--borderline);
   background-color: var(--header);
-  width: 100%;
+  width: 100vw;
   top: 0;
   left: 0;
   height: 61px;
 }
 .navbar {
-  width: 375px;
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--header);
-  position: relative;
-  display: flex;
+  width: 375px;
   margin-left: 150px;
   padding: 0 1px;
+  background-color: var(--header);
 }
 .navbar > a {
   text-decoration: none;
   color: var(--navbarfont);
   font-family: "Lato", sans-serif;
   font-size: 11px;
+  font-weight: bold;
   margin: 0;
   width: 100;
   letter-spacing: 1px;
 }
 .social-icons {
-  width: 151px;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--header);
-  position: relative;
   display: flex;
-  margin-left: 610px;
-  padding: 0 1px;
-}
-.social-icons > a {
+  align-items: center;
+  width: 200px;
   text-decoration: none;
+  margin-left: 611px;
+  padding: 0 1px;
   color: var(--iconsfont);
   font-size: 13px;
+  font-weight: bolder;
+  background-color: var(--header);
+}
+
+.fa-brands.fa-twitter {
+  margin-left: 17px;
+}
+.fa-brands.fa-instagram {
+  margin-left: 13px;
+}
+.fa-brands.fa-pinterest {
+  margin-left: 15px;
+}
+.fa-brands.fa-google-plus-g {
+  margin-left: 13px;
+}
+.fa-solid.fa-magnifying-glass {
+  margin-left: 19px;
 }
 .nav1 {
   align-content: center;
 }
+main {
+  display: flex;
+}
 .article-blocks {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  width: 100px;
-  position: relative;
-  list-style-type: none;
-  width: 750px;
+  width: 751px;
   padding: 0;
   margin-left: 150px;
-  margin-top: 52px;
+  margin-top: 51px;
   margin-bottom: 0px;
+  border-radius: 1px;
+  list-style-type: none;
+}
+
+.side-blocks {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  width: 362px;
+  padding: 0;
+  margin-left: 28px;
+  margin-top: 51px;
+  margin-bottom: 0px;
+  border-radius: 1px;
 }
 .article1 {
-  height: 920px;
-  margin-bottom: 50px;
-  background-color: orangered;
+  height: 923px;
+  margin-bottom: 49px;
+  background-color: #ffffff;
+  border: 1px solid var(--borderline);
 }
 .article2 {
   height: 925px;
-  margin-bottom: 51px;
-  background-color: plum;
+  margin-bottom: 48px;
+  background-color: #ffffff;
+  border: 1px solid var(--borderline);
 }
 .article3 {
-  height: 949px;
-  margin-bottom: 50px;
-  background-color: greenyellow;
+  height: 951px;
+  margin-bottom: 48px;
+  background-color: #ffffff;
+  border: 1px solid var(--borderline);
 }
 .article4 {
-  height: 923px;
-  background-color: olivedrab;
+  height: 924px;
+  background-color: #ffffff;
+  border: 1px solid var(--borderline);
   margin-bottom: 48px;
 }
+.side1 {
+  height: 546px;
+  margin-bottom: 38px;
+  background-color: #ffffff;
+  border: 1px solid var(--borderline);
+}
+.side2 {
+  height: 987px;
+  margin-bottom: 38px;
+  background-color: #ffffff;
+  border: 1px solid var(--borderline);
+}
+.side3 {
+  height: 516px;
+  margin-bottom: 38px;
+  background-color: #ffffff;
+  border: 1px solid var(--borderline);
+}
+.side4 {
+  height: 576px;
+  background-color: #ffffff;
+  margin-bottom: 48px;
+  border: 1px solid var(--borderline);
+}
+
 .page-buttons {
   display: flex;
   padding: 0;
@@ -121,34 +177,54 @@ header {
   height: 35px;
   width: 35px;
   border: none;
-  color: #000000;
+  color: #444444;
   font-family: "Oswald";
   font-size: 15.5px;
+  margin-left: 5px;
+  padding: 0;
+  border: 1px solid var(--pagebuttonborder);
+  font-size: 15px;
 }
 .button3 {
   background-color: #ffffff;
   height: 35px;
   width: 35px;
   border: none;
-  color: #000000;
+  color: #444444;
   font-family: "Oswald";
   font-size: 15.5px;
+  margin-left: 5px;
+  padding: 0;
+  border: 1px solid var(--pagebuttonborder);
+  font-size: 15px;
+  margin-bottom: 1px;
 }
 .button4 {
   background-color: #ffffff;
   height: 35px;
   width: 35px;
   border: none;
-  color: #000000;
+  color: #444444;
   font-family: "Oswald";
   font-size: 15.5px;
+  margin-left: 5px;
+  padding: 0;
+  border: 1px solid var(--pagebuttonborder);
+  font-size: 15px;
+  margin-bottom: 2px;
 }
 .button5 {
   background-color: #ffffff;
   height: 35px;
   width: 35px;
   border: none;
-  color: #000000;
+  color: #444444;
   font-family: "Oswald";
   font-size: 15.5px;
+  margin-left: 5px;
+  padding: 0;
+  border: 1px solid var(--pagebuttonborder);
+  font-size: 15px;
+  margin-bottom: 1px;
+  width: 42px;
 }
