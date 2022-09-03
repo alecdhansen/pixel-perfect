@@ -16,6 +16,8 @@ html {
   --pagebutton: #ca5c3c;
   --pagebuttonwhite1: #f3f2f2;
   --pagebuttonborder: #eeeeee;
+  --bottomborderblack: #222222;
+  --bottomfootertext: #797878;
 }
 
 body {
@@ -173,6 +175,7 @@ main {
   color: var(--pagebuttonwhite1);
   font-family: "Oswald";
   font-size: 15.5px;
+  transition: all 250ms ease;
 }
 .button2 {
   background-color: #ffffff;
@@ -186,6 +189,7 @@ main {
   padding: 0;
   border: 1px solid var(--pagebuttonborder);
   font-size: 15px;
+  transition: all 250ms ease;
 }
 .button3 {
   background-color: #ffffff;
@@ -200,6 +204,7 @@ main {
   border: 1px solid var(--pagebuttonborder);
   font-size: 15px;
   margin-bottom: 1px;
+  transition: all 250ms ease;
 }
 .button4 {
   background-color: #ffffff;
@@ -214,6 +219,7 @@ main {
   border: 1px solid var(--pagebuttonborder);
   font-size: 15px;
   margin-bottom: 2px;
+  transition: all 250ms ease;
 }
 .button5 {
   background-color: #ffffff;
@@ -229,6 +235,7 @@ main {
   font-size: 15px;
   margin-bottom: 1px;
   width: 42px;
+  transition: all 250ms ease;
 }
 .footer-content {
   display: flex;
@@ -254,10 +261,61 @@ main {
 }
 .footer-pictures {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   height: 180px;
   width: 100%;
+  padding: 0;
+  justify-content: space-between;
+  flex-basis: content;
+  list-style-type: none;
 }
-.footer-image1 {
-  object-fit: fill;
+.image-line {
+  flex-grow: 1;
+}
+img {
+  max-height: 181px;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  transition: 0.1s ease-in-out;
+}
+.footer-bottom {
+  font-family: "Lato";
+  font-size: 13px;
+  text-align: center;
+  align-content: center;
+  font-weight: 425;
+  letter-spacing: 0.45px;
+  width: 100%;
+  height: 65px;
+  padding-top: 26px;
+  color: var(--bottomfootertext);
+  background-color: var(--bottomborderblack);
+}
+
+img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 0.5s ease-in-out;
+  border: 2px solid #ffffff;
+}
+.button1:hover {
+  background-color: rgb(82, 190, 202);
+}
+.button2:hover {
+  background-color: rgb(173, 235, 242);
+  color: #ffffff;
+}
+.button3:hover {
+  background-color: rgb(173, 235, 242);
+  color: #ffffff;
+}
+.button4:hover {
+  background-color: rgb(173, 235, 242);
+  color: #ffffff;
+}
+.button5:hover {
+  background-color: rgb(173, 235, 242);
+  color: #ffffff;
 }
