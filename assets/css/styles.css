@@ -18,6 +18,10 @@ html {
   --pagebuttonborder: #eeeeee;
   --bottomborderblack: #222222;
   --bottomfootertext: #797878;
+  --articleheadertext: #d37755;
+  --paragraphcolor: #7e7d7d;
+  --buttonborder: #d98871;
+  --buttontransitions: transition: all 250ms ease;
 }
 
 body {
@@ -101,7 +105,72 @@ main {
   border-radius: 1px;
   list-style-type: none;
 }
-
+.article1-content {
+  height: 100%;
+}
+.small-heading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Lato";
+  color: var(--articleheadertext);
+  font-size: 11.5px;
+  letter-spacing: 0.8px;
+  margin-top: 45px;
+  margin-bottom: 0;
+}
+.big-heading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Oswald";
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+.article1-content > p {
+  display: flex;
+  font-family: "Lato";
+  color: #7e7d7d;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 0;
+  margin-left: 39px;
+  margin-right: 39px;
+  margin-top: 23px;
+  height: 150px;
+}
+.article1-button {
+  display: flex;
+  color: var(--articleheadertext);
+  border: 1px solid var(--buttonborder);
+  background-color: #ffffff;
+  padding: 11px 18px;
+  margin-left: 288px;
+  margin-top: 9px;
+  font-weight: bold;
+  transition: all 250ms ease;
+}
+.article1-button:hover {
+    background-color: var(--buttonborder);
+    color: #ffffff;
+}
+.date-plus-icons {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e8e8e8;
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+.name-date {
+    font-family: "lato";
+    ;
+}
 .side-blocks {
   display: flex;
   flex-direction: column;
@@ -118,6 +187,10 @@ main {
   margin-bottom: 49px;
   background-color: #ffffff;
   border: 1px solid var(--borderline);
+}
+.family1 {
+  max-height: 472px;
+  width: 100%;
 }
 .article2 {
   height: 925px;
@@ -293,13 +366,13 @@ img {
   background-color: var(--bottomborderblack);
 }
 
-img:hover {
+/* img:hover {
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
   transition: 0.5s ease-in-out;
   border: 2px solid #ffffff;
-}
+} */
 .button1:hover {
   background-color: rgb(82, 190, 202);
 }
