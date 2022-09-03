@@ -138,6 +138,11 @@ main {
 .guys1 {
     max-height: 474px;
 }
+.piggyback1 {
+    max-height: 500px;
+    width: 100%;
+    
+}
 .article-content {
   height: 100%;
 }
