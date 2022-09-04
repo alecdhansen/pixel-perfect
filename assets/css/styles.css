@@ -106,7 +106,7 @@ header {
   font-size: 28px;
   color: #000000;
 }
-.social-icons > a.fa.fa-facebook {
+.social-icons > .fa.fa-facebook {
   color: var(--iconsfont);
   text-decoration: inherit;
   background-image: linear-gradient(
@@ -121,7 +121,7 @@ header {
   -webkit-text-fill-color: transparent;
   transition: all 0.1s ease-in-out;
 }
-.social-icons > a.fa-brands.fa-twitter {
+.social-icons > .fa-brands.fa-twitter {
   color: var(--iconsfont);
   text-decoration: none;
   background-image: linear-gradient(
@@ -137,7 +137,7 @@ header {
   transition: all 0.1s ease-in-out;
   margin-left: 17px;
 }
-.fa-brands.fa-instagram {
+.social-icons > .fa-brands.fa-instagram {
   color: var(--iconsfont);
   text-decoration: none;
   background-image: linear-gradient(
@@ -161,7 +161,7 @@ header {
   transition: all 0.1s ease-in-out;
   margin-left: 13px;
 }
-.fa-brands.fa-pinterest {
+.social-icons > .fa-brands.fa-pinterest {
   color: var(--iconsfont);
   text-decoration: none;
   background-image: linear-gradient(
@@ -177,7 +177,7 @@ header {
   transition: all 0.1s ease-in-out;
   margin-left: 15px;
 }
-.fa-brands.fa-google-plus-g {
+.social-icons > .fa-brands.fa-google-plus-g {
   color: var(--iconsfont);
   text-decoration: none;
   background-image: linear-gradient(
@@ -197,7 +197,7 @@ header {
   transition: all 0.1s ease-in-out;
   margin-left: 13px;
 }
-.fa-solid.fa-magnifying-glass {
+.social-icons > .fa-solid.fa-magnifying-glass {
   color: var(--iconsfont);
   text-decoration: none;
   transition: all 0.1s ease-in-out;
@@ -328,7 +328,7 @@ main {
   font-size: 14px;
   color: #7e7d7d;
 }
-.article-icons {
+.article-social-icons {
   display: flex;
   align-items: center;
   color: #c2c2c2;
@@ -336,16 +336,16 @@ main {
   padding-top: 5px;
   letter-spacing: 0.5px;
 }
-.article-icons > .fa-brands.fa-twitter {
+.article-social-icons > .fa-brands.fa-twitter {
   margin-left: 15px;
 }
-.article-icons > .fa-brands.fa-instagram {
+.article-social-icons > .fa-brands.fa-instagram {
   margin-left: 15px;
 }
-.article-icons > .fa-brands.fa-pinterest {
+.article-social-icons > .fa-brands.fa-pinterest {
   margin-left: 16px;
 }
-.article-icons > .fa-brands.fa-google-plus-g {
+.article-social-icons > .fa-brands.fa-google-plus-g {
   margin-left: 15px;
 }
 .side-blocks {
@@ -362,9 +362,11 @@ main {
 
 .side1 {
   height: 546px;
+  width: 100%;
   margin-bottom: 38px;
   background-color: #ffffff;
   border: 1px solid var(--borderline);
+  position: relative;
 }
 .side2 {
   height: 987px;
@@ -384,7 +386,37 @@ main {
   margin-bottom: 48px;
   border: 1px solid var(--borderline);
 }
-
+.oceanpic {
+  max-height: 182px;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+}
+.profilepic-box {
+  width: 100%;
+  height: 546px;
+}
+.profilepic {
+  max-height: 179px;
+  width: 179px;
+  z-index: 20;
+  border: 5px solid #ffffff;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  margin-top: 30%;
+}
+.side-social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: #c2c2c2;
+  padding-left: 0;
+  letter-spacing: 30px;
+}
+/* everything below side */
 .page-buttons {
   display: flex;
   padding: 0;
