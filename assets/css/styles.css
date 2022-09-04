@@ -21,7 +21,8 @@ html {
   --articleheadertext: #d37755;
   --paragraphcolor: #7e7d7d;
   --buttonborder: #d98871;
-  --buttontransitions: transition: all 250ms ease;
+  --buttontransitions: ;
+  transition: all 250ms ease;
 }
 
 body {
@@ -36,7 +37,7 @@ header {
   display: flex;
   border-bottom: 1px solid var(--borderline);
   background-color: var(--header);
-  width: 100vw;
+  width: 100%;
   top: 0;
   left: 0;
   height: 61px;
@@ -61,11 +62,11 @@ header {
   letter-spacing: 1px;
 }
 .header-social-icons {
-    display: flex;
+  display: flex;
   align-items: center;
   width: 200px;
   text-decoration: none;
-  margin-left: 611px;
+  margin-left: 42.4%;
   padding: 0 1px;
   color: var(--iconsfont);
   font-size: 13px;
@@ -86,8 +87,8 @@ header {
   background-position: 0;
 }
 .social-icons > .fa-brands.fa-twitter:hover {
-    font-size: 20px;
-    background-position: 0;
+  font-size: 20px;
+  background-position: 0;
 }
 .social-icons > .fa-brands.fa-instagram:hover {
   font-size: 20px;
@@ -106,82 +107,94 @@ header {
   color: #000000;
 }
 .social-icons > a.fa.fa-facebook {
-    color: var(--iconsfont);
-    text-decoration: inherit;
-    background-image: linear-gradient(
-        to right,
-        #0165E1,
-        #17A9FD 50%,
-        var(--iconsfont) 50%
-      );
-      background-size: 200% 100%;
-      background-position: -100%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 0.1s ease-in-out;
-} 
+  color: var(--iconsfont);
+  text-decoration: inherit;
+  background-image: linear-gradient(
+    to right,
+    #0165e1,
+    #17a9fd 50%,
+    var(--iconsfont) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.1s ease-in-out;
+}
 .social-icons > a.fa-brands.fa-twitter {
-    color: var(--iconsfont);
-    text-decoration: none;
-    background-image: linear-gradient(
-        to right,
-        #1D9BF0,
-        #1D9BF0 50%,
-        var(--iconsfont) 50%
-      );
-      background-size: 200% 100%;
-      background-position: -100%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 0.1s ease-in-out;
-      margin-left: 17px;
+  color: var(--iconsfont);
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    #1d9bf0,
+    #1d9bf0 50%,
+    var(--iconsfont) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.1s ease-in-out;
+  margin-left: 17px;
 }
 .fa-brands.fa-instagram {
   color: var(--iconsfont);
-    text-decoration: none;
-    background-image: linear-gradient(
-        to right,
-        #405DE6,
-        #5851DB 5%, #833AB4 10%, #C13584 15%, #E1306C 20%, #FD1D1D 25%, #F56040 30%, #F77737 35%, #FCAF45 40%, #FFDC80 45%,
-        var(--iconsfont) 50%
-      );
-      background-size: 200% 100%;
-      background-position: -100%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 0.1s ease-in-out;
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    #405de6,
+    #5851db 5%,
+    #833ab4 10%,
+    #c13584 15%,
+    #e1306c 20%,
+    #fd1d1d 25%,
+    #f56040 30%,
+    #f77737 35%,
+    #fcaf45 40%,
+    #ffdc80 45%,
+    var(--iconsfont) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.1s ease-in-out;
   margin-left: 13px;
 }
 .fa-brands.fa-pinterest {
   color: var(--iconsfont);
-    text-decoration: none;
-    background-image: linear-gradient(
-        to right,
-        #E60023,
-        #E60023 50%,
-        var(--iconsfont) 50%
-      );
-      background-size: 200% 100%;
-      background-position: -100%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 0.1s ease-in-out;
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    #e60023,
+    #e60023 50%,
+    var(--iconsfont) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.1s ease-in-out;
   margin-left: 15px;
 }
 .fa-brands.fa-google-plus-g {
   color: var(--iconsfont);
-    text-decoration: none;
-    background-image: linear-gradient(
-        to right,
-        #00AC47,
-        #00832D 8%, #FFBA00 16%, #E94235 24%, #2684FC 32%, #0066DA 40%,
-        var(--iconsfont) 50%
-      );
-      background-size: 200% 100%;
-      background-position: -100%;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      transition: all 0.1s ease-in-out;
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    #00ac47,
+    #00832d 8%,
+    #ffba00 16%,
+    #e94235 24%,
+    #2684fc 32%,
+    #0066da 40%,
+    var(--iconsfont) 50%
+  );
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.1s ease-in-out;
   margin-left: 13px;
 }
 .fa-solid.fa-magnifying-glass {
@@ -195,6 +208,7 @@ header {
 }
 main {
   display: flex;
+  width: 100%;
 }
 .article-blocks {
   display: flex;
@@ -208,43 +222,43 @@ main {
   list-style-type: none;
 }
 .article1 {
-    height: 923px;
-    margin-bottom: 49px;
-    background-color: #ffffff;
-    border: 1px solid var(--borderline);
-  }
+  height: 923px;
+  margin-bottom: 49px;
+  background-color: #ffffff;
+  border: 1px solid var(--borderline);
+}
 .article2 {
-    height: 925px;
-    margin-bottom: 48px;
-    background-color: #ffffff;
-    border: 1px solid var(--borderline);
-  }
+  height: 925px;
+  margin-bottom: 48px;
+  background-color: #ffffff;
+  border: 1px solid var(--borderline);
+}
 .article3 {
-    height: 951px;
-    margin-bottom: 48px;
-    background-color: #ffffff;
-    border: 1px solid var(--borderline);
-  }
+  height: 951px;
+  margin-bottom: 48px;
+  background-color: #ffffff;
+  border: 1px solid var(--borderline);
+}
 .article4 {
-    height: 924px;
-    background-color: #ffffff;
-    border: 1px solid var(--borderline);
-    margin-bottom: 48px;
+  height: 924px;
+  background-color: #ffffff;
+  border: 1px solid var(--borderline);
+  margin-bottom: 48px;
 }
 .family1 {
-    max-height: 472px;
-    width: 100%;
-  }
+  max-height: 472px;
+  width: 100%;
+}
 .guys1 {
-    max-height: 474px;
+  max-height: 474px;
 }
 .piggyback1 {
-    max-height: 500px;
-    width: 100%;  
+  max-height: 500px;
+  width: 100%;
 }
 .arizona1 {
-    max-height: 474px;
-    width: 100%;
+  max-height: 474px;
+  width: 100%;
 }
 .article-content {
   height: 100%;
@@ -295,45 +309,44 @@ main {
   transition: all 250ms ease;
 }
 .article-button:hover {
-    background-color: var(--buttonborder);
-    color: #ffffff;
+  background-color: var(--buttonborder);
+  color: #ffffff;
 }
 .date-plus-icons {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #e8e8e8;
-    list-style-type: none;
-    padding-left: 0;
-    margin-left:39px;
-    margin-right: 40px;
-    margin-top: 40px;
-    padding-top: 18px;
-    
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #e8e8e8;
+  list-style-type: none;
+  padding-top: 18px;
+  padding-left: 0;
+  margin-left: 39px;
+  margin-right: 40px;
+  margin-top: 40px;
 }
 .name-date {
-    font-family: "lato";
-    font-size: 14px;
-    color: #7e7d7d;
+  font-family: "lato";
+  font-size: 14px;
+  color: #7e7d7d;
 }
 .article-icons {
-    display: flex;
-    align-items: center;
-    color: #C2C2C2;
-    padding-left: 0;
-    padding-top: 5px;
-    letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  color: #c2c2c2;
+  padding-left: 0;
+  padding-top: 5px;
+  letter-spacing: 0.5px;
 }
 .article-icons > .fa-brands.fa-twitter {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 .article-icons > .fa-brands.fa-instagram {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 .article-icons > .fa-brands.fa-pinterest {
-    margin-left: 16px;
+  margin-left: 16px;
 }
 .article-icons > .fa-brands.fa-google-plus-g {
-    margin-left: 15px;
+  margin-left: 15px;
 }
 .side-blocks {
   display: flex;
@@ -448,24 +461,24 @@ main {
   transition: all 250ms ease;
 }
 .button1:hover {
-    background-color: rgb(82, 190, 202);
-  }
-  .button2:hover {
-    background-color: rgb(173, 235, 242);
-    color: #ffffff;
-  }
-  .button3:hover {
-    background-color: rgb(173, 235, 242);
-    color: #ffffff;
-  }
-  .button4:hover {
-    background-color: rgb(173, 235, 242);
-    color: #ffffff;
-  }
-  .button5:hover {
-    background-color: rgb(173, 235, 242);
-    color: #ffffff;
-  }
+  background-color: rgb(82, 190, 202);
+}
+.button2:hover {
+  background-color: rgb(173, 235, 242);
+  color: #ffffff;
+}
+.button3:hover {
+  background-color: rgb(173, 235, 242);
+  color: #ffffff;
+}
+.button4:hover {
+  background-color: rgb(173, 235, 242);
+  color: #ffffff;
+}
+.button5:hover {
+  background-color: rgb(173, 235, 242);
+  color: #ffffff;
+}
 .footer-content {
   display: flex;
   flex-direction: column;
