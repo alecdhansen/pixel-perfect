@@ -60,8 +60,8 @@ header {
   width: 100;
   letter-spacing: 1px;
 }
-.social-icons {
-  display: flex;
+.header-social-icons {
+    display: flex;
   align-items: center;
   width: 200px;
   text-decoration: none;
@@ -71,21 +71,123 @@ header {
   font-size: 13px;
   font-weight: bolder;
   background-color: var(--header);
+  list-style-type: none;
 }
-
-.fa-brands.fa-twitter {
-  margin-left: 17px;
+.social-icons {
+  text-decoration: none;
+  color: var(--iconsfont);
+  font-size: 13px;
+  font-weight: bolder;
+  background-color: var(--header);
+  list-style-type: none;
+}
+.social-icons > .fa.fa-facebook:hover {
+  font-size: 20px;
+  background-position: 0;
+}
+.social-icons > .fa-brands.fa-twitter:hover {
+    font-size: 20px;
+    background-position: 0;
+}
+.social-icons > .fa-brands.fa-instagram:hover {
+  font-size: 20px;
+  background-position: 0;
+}
+.social-icons > .fa-brands.fa-pinterest:hover {
+  font-size: 20px;
+  background-position: 0;
+}
+.social-icons > .fa-brands.fa-google-plus-g:hover {
+  font-size: 20px;
+  background-position: 0;
+}
+.social-icons > .fa-solid.fa-magnifying-glass:hover {
+  font-size: 28px;
+  color: #000000;
+}
+.social-icons > a.fa.fa-facebook {
+    color: var(--iconsfont);
+    text-decoration: inherit;
+    background-image: linear-gradient(
+        to right,
+        #0165E1,
+        #17A9FD 50%,
+        var(--iconsfont) 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.1s ease-in-out;
+} 
+.social-icons > a.fa-brands.fa-twitter {
+    color: var(--iconsfont);
+    text-decoration: none;
+    background-image: linear-gradient(
+        to right,
+        #1D9BF0,
+        #1D9BF0 50%,
+        var(--iconsfont) 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.1s ease-in-out;
+      margin-left: 17px;
 }
 .fa-brands.fa-instagram {
+  color: var(--iconsfont);
+    text-decoration: none;
+    background-image: linear-gradient(
+        to right,
+        #405DE6,
+        #5851DB 5%, #833AB4 10%, #C13584 15%, #E1306C 20%, #FD1D1D 25%, #F56040 30%, #F77737 35%, #FCAF45 40%, #FFDC80 45%,
+        var(--iconsfont) 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.1s ease-in-out;
   margin-left: 13px;
 }
 .fa-brands.fa-pinterest {
+  color: var(--iconsfont);
+    text-decoration: none;
+    background-image: linear-gradient(
+        to right,
+        #E60023,
+        #E60023 50%,
+        var(--iconsfont) 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.1s ease-in-out;
   margin-left: 15px;
 }
 .fa-brands.fa-google-plus-g {
+  color: var(--iconsfont);
+    text-decoration: none;
+    background-image: linear-gradient(
+        to right,
+        #00AC47,
+        #00832D 8%, #FFBA00 16%, #E94235 24%, #2684FC 32%, #0066DA 40%,
+        var(--iconsfont) 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.1s ease-in-out;
   margin-left: 13px;
 }
 .fa-solid.fa-magnifying-glass {
+  color: var(--iconsfont);
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
   margin-left: 19px;
 }
 .nav1 {
@@ -97,9 +199,9 @@ main {
 .article-blocks {
   display: flex;
   flex-direction: column;
-  width: 751px;
+  width: 752px;
   padding: 0;
-  margin-left: 150px;
+  margin-left: 149px;
   margin-top: 51px;
   margin-bottom: 0px;
   border-radius: 1px;
@@ -129,8 +231,6 @@ main {
     border: 1px solid var(--borderline);
     margin-bottom: 48px;
 }
-/* ARTICLE 1 BELOW */
-
 .family1 {
     max-height: 472px;
     width: 100%;
@@ -140,8 +240,11 @@ main {
 }
 .piggyback1 {
     max-height: 500px;
+    width: 100%;  
+}
+.arizona1 {
+    max-height: 474px;
     width: 100%;
-    
 }
 .article-content {
   height: 100%;
@@ -166,6 +269,7 @@ main {
   letter-spacing: 0.5px;
   margin-top: 8px;
   margin-bottom: 0;
+  color: #444444;
 }
 .article-content > p {
   display: flex;
@@ -231,9 +335,6 @@ main {
 .article-icons > .fa-brands.fa-google-plus-g {
     margin-left: 15px;
 }
-/* ARTICLE 1 ABOVE */
-/* ARTICLE 2 BELOW */
-
 .side-blocks {
   display: flex;
   flex-direction: column;
