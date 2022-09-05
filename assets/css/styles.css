@@ -414,7 +414,7 @@ main {
   border: 1px solid var(--borderline);
 }
 .side4 {
-  height: 576px;
+  min-height: 576px;
   background-color: #ffffff;
   margin-bottom: 48px;
   border: 1px solid var(--borderline);
@@ -592,7 +592,6 @@ main {
   color: #7e7d7d;
   margin-top: 11px;
 }
-/* dfdfdf */
 .side3 > h2 {
   display: flex;
   justify-content: center;
@@ -752,13 +751,43 @@ main {
   margin-left: 118px;
   position: absolute;
 }
+.side4 > h2 > a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: #444444;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.side4box1 {
+  width: 83.6%;
+  margin: 25px 8.2% 0 8.2%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.side4box1 > a {
+  max-width: 145px;
+  max-height: 145px;
+  margin-bottom: 11px;
+}
+.side4box1 > a > img {
+  width: 145px;
+  height: 145px;
+}
 .page-buttons {
   display: flex;
   margin-left: 149px;
   margin-top: 0px;
   height: 36px;
 }
-.button1 {
+.page-buttons > a > .button1 {
   background-color: var(--pagebutton);
   height: 100%;
   width: 34px;
@@ -813,12 +842,11 @@ main {
   margin-bottom: 2px;
   transition: 0.3s;
 }
-.button5 {
+.page-buttons > a > button {
   background-color: #ffffff;
   height: 100%;
   width: 35px;
   border: none;
-  color: #444444;
   font-family: "Oswald";
   font-size: 15px;
   margin-left: 5px;
@@ -828,6 +856,9 @@ main {
   margin-bottom: 1px;
   width: 42px;
   transition: 0.3s;
+}
+.fa-solid.fa-chevrons-right {
+  color: black;
 }
 .button1:hover {
   background-color: #9e462b;
@@ -872,11 +903,11 @@ main {
 }
 .footer-pictures {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   height: 180px;
   width: 100%;
   padding: 0;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-basis: content;
   list-style-type: none;
 }
@@ -887,8 +918,10 @@ main {
   max-height: 181px;
   min-width: 100%;
   object-fit: cover;
-  vertical-align: bottom;
-  transition: 0.1s ease-in-out;
+  transition: 0.3s;
+}
+.image-line > img:hover {
+  opacity: 0.3;
 }
 .footer-bottom {
   font-family: "Lato";
@@ -902,7 +935,4 @@ main {
   padding-top: 26px;
   color: var(--bottomfootertext);
   background-color: var(--bottomborderblack);
-}
-.image-line > img:hover {
-  opacity: 0.3;
 }
