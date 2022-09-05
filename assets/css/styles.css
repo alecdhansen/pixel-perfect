@@ -578,6 +578,167 @@ main {
   color: #7e7d7d;
   margin-top: 11px;
 }
+/* dfdfdf */
+.side3 > h2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: #444444;
+}
+.side3box1 {
+  width: 300px;
+  height: 93px;
+  margin-top: 26px;
+  margin-left: 30px;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+}
+.side3box1 > img {
+  position: absolute;
+  width: 103px;
+  height: 76px;
+}
+.side3box1 > h3 {
+  display: flex;
+  width: 100%;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-top: 1px;
+  margin-left: 118px;
+  color: #444444;
+  margin-bottom: 0;
+  font-stretch: semi-condensed;
+  font-size-adjust: 0.5;
+  position: absolute;
+}
+.side3box1 > h4 {
+  font-family: "lato";
+  font-size: 14px;
+  font-weight: 200;
+  color: #7e7d7d;
+  margin-top: 28px;
+  margin-left: 118px;
+  position: absolute;
+}
+.side3box2 {
+  width: 300px;
+  height: 93px;
+  margin-top: 14px;
+  margin-left: 30px;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+}
+.side3box2 > img {
+  position: absolute;
+  width: 103px;
+  height: 76px;
+}
+.side3box2 > h3 {
+  display: flex;
+  width: 100%;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-top: 1px;
+  margin-left: 118px;
+  color: #444444;
+  margin-bottom: 0;
+  font-stretch: semi-condensed;
+  font-size-adjust: 0.5;
+  position: absolute;
+}
+.side3box2 > h4 {
+  font-family: "lato";
+  font-size: 14px;
+  font-weight: 200;
+  color: #7e7d7d;
+  margin-top: 28px;
+  margin-left: 118px;
+  position: absolute;
+}
+.side3box3 {
+  width: 300px;
+  height: 92px;
+  margin-top: 14px;
+  margin-left: 30px;
+  border-bottom: 1px solid #e8e8e8;
+  position: relative;
+}
+.side3box3 > img {
+  position: absolute;
+  width: 103px;
+  height: 76px;
+}
+.side3box3 > h3 {
+  display: flex;
+  width: 100%;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-top: 1px;
+  margin-left: 118px;
+  color: #444444;
+  margin-bottom: 0;
+  font-stretch: semi-condensed;
+  font-size-adjust: 0.5;
+  position: absolute;
+}
+.side3box3 > h4 {
+  font-family: "lato";
+  font-size: 14px;
+  font-weight: 200;
+  color: #7e7d7d;
+  margin-top: 28px;
+  margin-left: 118px;
+  position: absolute;
+}
+.side3box4 {
+  width: 300px;
+  height: 92px;
+  margin-top: 14px;
+  margin-left: 30px;
+  position: relative;
+}
+.side3box4 > img {
+  position: absolute;
+  width: 103px;
+  height: 76px;
+}
+.side3box4 > h3 {
+  display: flex;
+  width: 100%;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  margin-top: 1px;
+  margin-left: 118px;
+  color: #444444;
+  margin-bottom: 0;
+  font-stretch: semi-condensed;
+  font-size-adjust: 0.5;
+  position: absolute;
+}
+.side3box4 > h4 {
+  font-family: "lato";
+  font-size: 14px;
+  font-weight: 200;
+  color: #7e7d7d;
+  margin-top: 28px;
+  margin-left: 118px;
+  position: absolute;
+}
+
 /* everything below side */
 .page-buttons {
   display: flex;
@@ -730,5 +891,4 @@ main {
 }
 .image-line > img:hover {
   opacity: 0.3;
-  text
 }
