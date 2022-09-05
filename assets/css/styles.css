@@ -31,7 +31,6 @@ body {
   margin: 0;
   background-color: var(--mainbody);
   width: 100%;
-  position: absolute;
 }
 header {
   display: flex;
@@ -40,13 +39,13 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  height: 61px;
+  height: 62px;
 }
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 375px;
+  width: 26%;
   margin-left: 150px;
   padding: 0 1px;
   background-color: var(--header);
@@ -60,6 +59,10 @@ header {
   margin: 0;
   width: 100;
   letter-spacing: 1px;
+  transition: 0.3s;
+}
+.navbar > a:hover {
+  color: #be6748;
 }
 .header-social-icons {
   display: flex;
@@ -81,38 +84,36 @@ header {
   font-weight: bolder;
   background-color: var(--header);
   list-style-type: none;
+  transition: 0.3s;
+}
+.social-icons:hover {
+  color: #be6748;
 }
 .social-icons > .fa.fa-facebook:hover {
-  font-size: 20px;
   background-position: 0;
 }
 .social-icons > .fa-brands.fa-twitter:hover {
-  font-size: 20px;
   background-position: 0;
 }
 .social-icons > .fa-brands.fa-instagram:hover {
-  font-size: 20px;
   background-position: 0;
 }
 .social-icons > .fa-brands.fa-pinterest:hover {
-  font-size: 20px;
   background-position: 0;
 }
 .social-icons > .fa-brands.fa-google-plus-g:hover {
-  font-size: 20px;
   background-position: 0;
 }
 .social-icons > .fa-solid.fa-magnifying-glass:hover {
-  font-size: 28px;
-  color: #000000;
+  color: #be6748;
 }
 .social-icons > .fa.fa-facebook {
   color: var(--iconsfont);
   text-decoration: inherit;
   background-image: linear-gradient(
     to right,
-    #0165e1,
-    #17a9fd 50%,
+    #be6748,
+    #be6748 50%,
     var(--iconsfont) 50%
   );
   background-size: 200% 100%;
@@ -126,8 +127,8 @@ header {
   text-decoration: none;
   background-image: linear-gradient(
     to right,
-    #1d9bf0,
-    #1d9bf0 50%,
+    #be6748,
+    #be6748 50%,
     var(--iconsfont) 50%
   );
   background-size: 200% 100%;
@@ -142,16 +143,8 @@ header {
   text-decoration: none;
   background-image: linear-gradient(
     to right,
-    #405de6,
-    #5851db 5%,
-    #833ab4 10%,
-    #c13584 15%,
-    #e1306c 20%,
-    #fd1d1d 25%,
-    #f56040 30%,
-    #f77737 35%,
-    #fcaf45 40%,
-    #ffdc80 45%,
+    #be6748,
+    #be6748 50%,
     var(--iconsfont) 50%
   );
   background-size: 200% 100%;
@@ -166,8 +159,8 @@ header {
   text-decoration: none;
   background-image: linear-gradient(
     to right,
-    #e60023,
-    #e60023 50%,
+    #be6748,
+    #be6748 50%,
     var(--iconsfont) 50%
   );
   background-size: 200% 100%;
@@ -182,12 +175,8 @@ header {
   text-decoration: none;
   background-image: linear-gradient(
     to right,
-    #00ac47,
-    #00832d 8%,
-    #ffba00 16%,
-    #e94235 24%,
-    #2684fc 32%,
-    #0066da 40%,
+    #be6748,
+    #be6748 50%,
     var(--iconsfont) 50%
   );
   background-size: 200% 100%;
@@ -213,7 +202,7 @@ main {
 .article-blocks {
   display: flex;
   flex-direction: column;
-  width: 752px;
+  width: 52.2%;
   padding: 0;
   margin-left: 149px;
   margin-top: 51px;
@@ -251,6 +240,7 @@ main {
 }
 .guys1 {
   max-height: 474px;
+  width: 100%;
 }
 .piggyback1 {
   max-height: 500px;
@@ -327,6 +317,33 @@ main {
   font-family: "lato";
   font-size: 14px;
   color: #7e7d7d;
+  text-decoration: none;
+}
+.namelink {
+  font-family: "lato";
+  font-size: 14px;
+  color: #7e7d7d;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.namelink:hover {
+  color: #be6748;
+}
+.headinglink {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: "Oswald";
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-top: 8px;
+  margin-bottom: 0;
+  color: #444444;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.headinglink:hover {
+  color: #be6748;
 }
 .article-social-icons {
   display: flex;
@@ -335,24 +352,41 @@ main {
   padding-left: 0;
   padding-top: 5px;
   letter-spacing: 0.5px;
+  text-decoration: none;
+  list-style-type: none;
+  color: #7e7d7d;
 }
-.article-social-icons > .fa-brands.fa-twitter {
+.article-social-icons > li > a {
+  display: flex;
+  align-items: center;
+  color: #c2c2c2;
+  padding-left: 0;
+  padding-top: 5px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  list-style-type: none;
+  transition: 0.3s;
+}
+.article-social-icons > li > a:hover {
+  color: #be6748;
+}
+.article-social-icons > li > .fa-brands.fa-twitter {
   margin-left: 15px;
 }
-.article-social-icons > .fa-brands.fa-instagram {
+.article-social-icons > li > .fa-brands.fa-instagram {
   margin-left: 15px;
 }
-.article-social-icons > .fa-brands.fa-pinterest {
+.article-social-icons > li > .fa-brands.fa-pinterest {
   margin-left: 16px;
 }
-.article-social-icons > .fa-brands.fa-google-plus-g {
+.article-social-icons > li > .fa-brands.fa-google-plus-g {
   margin-left: 15px;
 }
 .side-blocks {
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  width: 362px;
+  width: 25.2%;
   padding: 0;
   margin-left: 28px;
   margin-top: 51px;
@@ -397,13 +431,13 @@ main {
 }
 .profilepic {
   height: 194px;
-  width: 194px;
+  width: 54%;
   z-index: 20;
   border: 7px solid #ffffff;
   border-radius: 100%;
   position: absolute;
-  margin-top: 98px;
-  left: 23%;
+  margin-top: 97px;
+  margin-left: 23%;
 }
 .side1 > h2 {
   display: flex;
@@ -440,7 +474,7 @@ main {
   margin-top: 4px;
   margin-left: 0px;
 }
-.side-social-icons {
+.side-social-icons > a {
   display: flex;
   justify-content: center;
   width: 30px;
@@ -451,32 +485,12 @@ main {
   font-size: 14px;
   margin: 0 5px 0 4px;
   font-size: 13px;
-}
-.side-social-icons > .fa.fa-facebook {
-  border-radius: 100%;
   text-decoration: none;
   color: #a7a7a7;
 }
-.side-social-icons > .fa-brands.fa-twitter {
-  border-radius: 100%;
-  text-decoration: none;
-  color: #a7a7a7;
-}
-.side-social-icons > .fa-brands.fa-google-plus-g {
-  border-radius: 100%;
-  text-decoration: none;
-  color: #a7a7a7;
-}
-.side-social-icons > .fa-brands.fa-linkedin-in {
-  border-radius: 100%;
-  text-decoration: none;
-  color: #a7a7a7;
-}
-.side-social-icons > .fa-brands.fa-instagram {
-  border-radius: 100%;
-  text-decoration: none;
-  color: #a7a7a7;
-  font-size: 13px;
+.side-social-icons > a:hover {
+  background-color: #be6748;
+  color: #ffffff;
 }
 .side2 > h2 {
   display: flex;
@@ -738,100 +752,100 @@ main {
   margin-left: 118px;
   position: absolute;
 }
-
-/* everything below side */
 .page-buttons {
   display: flex;
-  padding: 0;
-  margin-left: 150px;
+  margin-left: 149px;
+  margin-top: 0px;
+  height: 36px;
 }
 .button1 {
   background-color: var(--pagebutton);
-  height: 34px;
-  width: 32px;
-  border: none;
+  height: 100%;
+  width: 34px;
+  border: 1px solid var(--pagebuttonborder);
   color: var(--pagebuttonwhite1);
   font-family: "Oswald";
-  font-size: 15.5px;
-  transition: all 250ms ease;
+  font-size: 15px;
+  font-weight: 300;
+  transition: 0.3s;
 }
 .button2 {
   background-color: #ffffff;
-  height: 35px;
+  height: 100%;
   width: 35px;
   border: none;
   color: #444444;
   font-family: "Oswald";
-  font-size: 15.5px;
+  font-size: 15px;
   margin-left: 5px;
   padding: 0;
   border: 1px solid var(--pagebuttonborder);
   font-size: 15px;
-  transition: all 250ms ease;
+  transition: 0.3s;
 }
 .button3 {
   background-color: #ffffff;
-  height: 35px;
+  height: 100%;
   width: 35px;
   border: none;
   color: #444444;
   font-family: "Oswald";
-  font-size: 15.5px;
+  font-size: 15px;
   margin-left: 5px;
   padding: 0;
   border: 1px solid var(--pagebuttonborder);
   font-size: 15px;
   margin-bottom: 1px;
-  transition: all 250ms ease;
+  transition: 0.3s;
 }
 .button4 {
   background-color: #ffffff;
-  height: 35px;
+  height: 100%;
   width: 35px;
   border: none;
   color: #444444;
   font-family: "Oswald";
-  font-size: 15.5px;
+  font-size: 15px;
   margin-left: 5px;
   padding: 0;
   border: 1px solid var(--pagebuttonborder);
   font-size: 15px;
   margin-bottom: 2px;
-  transition: all 250ms ease;
+  transition: 0.3s;
 }
 .button5 {
   background-color: #ffffff;
-  height: 35px;
+  height: 100%;
   width: 35px;
   border: none;
   color: #444444;
   font-family: "Oswald";
-  font-size: 15.5px;
+  font-size: 15px;
   margin-left: 5px;
   padding: 0;
   border: 1px solid var(--pagebuttonborder);
   font-size: 15px;
   margin-bottom: 1px;
   width: 42px;
-  transition: all 250ms ease;
+  transition: 0.3s;
 }
 .button1:hover {
-  background-color: rgb(82, 190, 202);
+  background-color: #9e462b;
 }
 .button2:hover {
-  background-color: rgb(173, 235, 242);
+  background-color: #ca5c3b;
   color: #ffffff;
 }
 .button3:hover {
-  background-color: rgb(173, 235, 242);
+  background-color: #ca5c3b;
   color: #ffffff;
 }
 .button4:hover {
-  background-color: rgb(173, 235, 242);
+  background-color: #ca5c3b;
   color: #ffffff;
 }
 .button5:hover {
-  background-color: rgb(173, 235, 242);
+  background-color: #ca5c3b;
   color: #ffffff;
 }
 .footer-content {
