@@ -829,26 +829,33 @@ main {
   text-decoration: none;
   transition: 0.3s;
 }
+.side4 > h2 {
+  margin-bottom: 26px;
+}
 .side4box1 {
-  width: 83.6%;
-  margin: 25px 8.2% 0 8.2%;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  min-height: 465px;
+  width: 310px;
+  flex-basis: content;
+  margin: 0 7.9%;
+  row-gap: 5px;
+  column-gap: 5px;
+  margin-left: 30px;
 }
-.side4box1 > a {
-  max-width: 145px;
-  max-height: 145px;
-  margin-bottom: 11px;
+.side4box1 > .image-wrapper {
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  max-width: 144px;
 }
-.side4box1 > a > img {
-  width: 145px;
-  height: 145px;
-  transition: 0.3s;
-}
-.side4box1 > a > img:hover {
-  opacity: 0.3;
-  cursor: pointer;
+.image-wrapper > a > img {
+  display: block;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  max-width: 144px;
 }
 .page-buttons {
   display: flex;
