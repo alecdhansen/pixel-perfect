@@ -211,7 +211,7 @@ main {
   list-style-type: none;
 }
 .article1 {
-  height: 923px;
+  height: 922px;
   margin-bottom: 49px;
   background-color: #ffffff;
   border: 1px solid var(--borderline);
@@ -261,8 +261,11 @@ main {
   color: var(--articleheadertext);
   font-size: 11.5px;
   letter-spacing: 0.8px;
-  margin-top: 45px;
+  margin-top: 40px;
   margin-bottom: 0;
+}
+.article3 > .article-content > .big-heading {
+  margin-top: 2px;
 }
 .big-heading {
   display: flex;
@@ -271,7 +274,7 @@ main {
   font-family: "Oswald";
   font-weight: 500;
   letter-spacing: 0.5px;
-  margin-top: 8px;
+  margin-top: 1px;
   margin-bottom: 0;
   color: #444444;
 }
@@ -282,9 +285,9 @@ main {
   font-size: 15px;
   line-height: 25px;
   margin-bottom: 0;
-  margin-left: 39px;
+  margin-left: 40px;
   margin-right: 39px;
-  margin-top: 23px;
+  margin-top: 21px;
   height: 150px;
 }
 .article-button {
@@ -294,9 +297,11 @@ main {
   background-color: #ffffff;
   padding: 11px 18px;
   margin-left: 288px;
-  margin-top: 9px;
-  font-weight: bold;
-  transition: all 250ms ease;
+  margin-top: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  font-size: 13px;
+  transition: 0.3s;
 }
 .article-button:hover {
   background-color: var(--buttonborder);
@@ -309,9 +314,9 @@ main {
   list-style-type: none;
   padding-top: 18px;
   padding-left: 0;
-  margin-left: 39px;
+  margin-left: 40px;
   margin-right: 40px;
-  margin-top: 40px;
+  margin-top: 39px;
 }
 .name-date {
   font-family: "lato";
@@ -350,7 +355,7 @@ main {
   align-items: center;
   color: #c2c2c2;
   padding-left: 0;
-  padding-top: 5px;
+  padding-top: 0px;
   letter-spacing: 0.5px;
   text-decoration: none;
   list-style-type: none;
@@ -508,6 +513,10 @@ main {
   width: 300px;
   height: 200px;
   margin: 27px 0 0 30px;
+  transition: 0.3s;
+}
+.beans1:hover {
+  opacity: 0.3;
 }
 .side2box1 {
   width: 300px;
@@ -538,6 +547,10 @@ main {
   height: 200px;
   margin-top: 19px;
   margin-left: 30px;
+  transition: 0.3s;
+}
+.beans2:hover {
+  opacity: 0.3;
 }
 .side2box2 {
   width: 300px;
@@ -567,6 +580,10 @@ main {
   width: 300px;
   height: 200px;
   margin: 19px 0 0 30px;
+  transition: 0.3s;
+}
+.beans3:hover {
+  opacity: 0.3;
 }
 .side2box3 {
   width: 300px;
@@ -612,10 +629,16 @@ main {
   border-bottom: 1px solid #e8e8e8;
   position: relative;
 }
-.side3box1 > img {
+.side3box1 > a {
   position: absolute;
+}
+.side3box1 > a > img {
   width: 103px;
   height: 76px;
+  transition: 0.3s;
+}
+.side3box1 > a > img:hover {
+  opacity: 0.5;
 }
 .side3box1 > h3 {
   display: flex;
@@ -649,10 +672,17 @@ main {
   border-bottom: 1px solid #e8e8e8;
   position: relative;
 }
-.side3box2 > img {
+.side3box2 > a {
+  position: absolute;
+}
+.side3box2 > a > img {
   position: absolute;
   width: 103px;
   height: 76px;
+  transition: 0.3s;
+}
+.side3box2 > a > img:hover {
+  opacity: 0.3;
 }
 .side3box2 > h3 {
   display: flex;
@@ -686,10 +716,17 @@ main {
   border-bottom: 1px solid #e8e8e8;
   position: relative;
 }
-.side3box3 > img {
+.side3box3 > a {
+  position: absolute;
+}
+.side3box3 > a > img {
   position: absolute;
   width: 103px;
   height: 76px;
+  transition: 0.3s;
+}
+.side3box3 > a > img:hover {
+  opacity: 0.3;
 }
 .side3box3 > h3 {
   display: flex;
@@ -722,10 +759,17 @@ main {
   margin-left: 30px;
   position: relative;
 }
-.side3box4 > img {
+.side3box4 > a {
+  position: absolute;
+}
+.side3box4 > a > img {
   position: absolute;
   width: 103px;
   height: 76px;
+  transition: 0.3s;
+}
+.side3box4 > a > img:hover {
+  opacity: 0.3;
 }
 .side3box4 > h3 {
   display: flex;
@@ -780,6 +824,10 @@ main {
 .side4box1 > a > img {
   width: 145px;
   height: 145px;
+  transition: 0.3s;
+}
+.side4box1 > a > img:hover {
+  opacity: 0.3;
 }
 .page-buttons {
   display: flex;
@@ -787,7 +835,7 @@ main {
   margin-top: 0px;
   height: 36px;
 }
-.page-buttons > a > .button1 {
+.button1 {
   background-color: var(--pagebutton);
   height: 100%;
   width: 34px;
@@ -842,13 +890,15 @@ main {
   margin-bottom: 2px;
   transition: 0.3s;
 }
-.page-buttons > a > button {
+.button5 {
   background-color: #ffffff;
   height: 100%;
   width: 35px;
   border: none;
+  color: #444444;
   font-family: "Oswald";
   font-size: 15px;
+  font-weight: bolder;
   margin-left: 5px;
   padding: 0;
   border: 1px solid var(--pagebuttonborder);
@@ -856,9 +906,6 @@ main {
   margin-bottom: 1px;
   width: 42px;
   transition: 0.3s;
-}
-.fa-solid.fa-chevrons-right {
-  color: black;
 }
 .button1:hover {
   background-color: #9e462b;
@@ -885,7 +932,7 @@ main {
   padding: 0;
   margin-bottom: 0;
   margin-top: 85px;
-  height: 324px;
+  height: 327px;
   background-color: #ffffff;
   border-top: 1px solid #eeeeee;
 }
@@ -897,15 +944,32 @@ main {
   font-weight: 425;
   letter-spacing: 0.2px;
   width: 100%;
-  height: 78px;
-  padding-top: 26px;
+  height: 82px;
+  padding-top: 27px;
   color: #444444;
+}
+.footer-top > a {
+  font-family: "Oswald";
+  font-size: 18.5px;
+  text-align: center;
+  align-content: center;
+  font-weight: 425;
+  letter-spacing: 0.2px;
+  width: 100%;
+  height: 82px;
+  padding-top: 27px;
+  color: #444444;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.footer-top > a:hover {
+  color: #be6748;
 }
 .footer-pictures {
   display: flex;
   /* flex-wrap: wrap; */
   height: 180px;
-  width: 100%;
+  width: 100vw;
   padding: 0;
   /* justify-content: space-between; */
   flex-basis: content;
@@ -913,6 +977,7 @@ main {
 }
 .image-line {
   flex-grow: 1;
+  width: 100vw;
 }
 .image-line > img {
   max-height: 181px;
@@ -921,7 +986,9 @@ main {
   transition: 0.3s;
 }
 .image-line > img:hover {
-  opacity: 0.3;
+  opacity: 0.5;
+  background-color: red;
+  filter: alpha;
 }
 .footer-bottom {
   font-family: "Lato";
@@ -931,8 +998,8 @@ main {
   font-weight: 425;
   letter-spacing: 0.45px;
   width: 100%;
-  height: 65px;
-  padding-top: 26px;
+  height: 66px;
+  padding-top: 24px;
   color: var(--bottomfootertext);
   background-color: var(--bottomborderblack);
 }
