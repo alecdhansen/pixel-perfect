@@ -50,6 +50,9 @@ header {
   padding: 0 1px;
   background-color: var(--header);
 }
+.mobile-menu {
+  display: none;
+}
 .navbar > a {
   text-decoration: none;
   color: var(--navbarfont);
@@ -1099,9 +1102,29 @@ footer {
     background-color: var(--header);
     width: 100%;
     height: 52px;
+    display: flex;
+    justify-content: flex-end;
   }
   .navbar {
     display: none;
+  }
+  .mobile-menu > a > .fa-sharp.fa-solid.fa-bars {
+    color: #888888;
+    font-size: 20px;
+    display: flex;
+    place-content: center;
+    border-bottom: none;
+    margin-right: 42px;
+  }
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+  }
+  .fa-sharp.fa-solid.fa-bars:hover {
+    color: #be6748;
+    cursor: pointer;
+    font-size: 30px;
   }
   .header-social-icons {
     display: none;
