@@ -1116,6 +1116,9 @@ footer {
     border-bottom: none;
     margin-right: 42px;
   }
+  .mobile-menu > a {
+    text-decoration: none;
+  }
   .mobile-menu {
     display: flex;
     align-items: center;
@@ -1489,8 +1492,6 @@ footer {
     color: #7e7d7d;
     margin-top: 0px;
     margin-bottom: 0px;
-  }
-  .side2box3 {
   }
   .side1 > p {
     display: flex;
