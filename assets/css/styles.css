@@ -1,29 +1,4 @@
-￼
-  Alec
-  Hansen
-  add
-  spacing
-  in
-  social
-  ocerlay
-  Latest
-  commit
-  a70e22d
-  14
-  hours
-  ago
-  History
-  0
-  contributors
-  1837
-  lines
-  (1827 sloc)
-  35.3
-  KB
-  RawBlame
-  ￼
-  ￼
-  html {
+html {
   box-sizing: border-box;
 }
 
@@ -1654,5 +1629,209 @@ footer {
     padding: 0;
     border: 1px solid var(--pagebuttonborder);
     font-size: 15px;
+    margin-bottom: 1px;
+    transition: 0.3s;
+  }
+  .button4 {
+    background-color: #ffffff;
+    height: 100%;
+    width: 35px;
+    border: none;
+    color: #444444;
+    font-family: "Oswald";
+    font-size: 15px;
+    margin-left: 5px;
+    padding: 0;
+    border: 1px solid var(--pagebuttonborder);
+    font-size: 15px;
+    margin-bottom: 2px;
+    transition: 0.3s;
+  }
+  .button5 {
+    background-color: #ffffff;
+    height: 100%;
+    width: 35px;
+    border: none;
+    color: #444444;
+    font-family: "Oswald";
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 5px;
+    padding: 0;
+    border: 1px solid var(--pagebuttonborder);
+    font-size: 15px;
+    margin-bottom: 1px;
+    width: 42px;
+    transition: 0.3s;
+  }
+  .profilepic {
+    height: 194px;
+    width: 40%;
+    z-index: 20;
+    border: 7px solid #ffffff;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 108px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 860px) and (max-width: 1160px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    text-decoration: none;
+    margin-left: 15%;
+    padding: 0 1px;
+    color: var(--iconsfont);
+    font-weight: bolder;
+    background-color: var(--header);
+    list-style-type: none;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin-left: 10%;
+    padding: 0 1px;
+    background-color: var(--header);
+  }
+  .navbar > a {
+    text-decoration: none;
+    color: var(--navbarfont);
+    font-family: "Lato", sans-serif;
+    font-size: 9px;
+    font-weight: bold;
+    margin: 0;
+    width: 100;
+    letter-spacing: 1px;
+    transition: 0.3s;
+  }
+  .article-blocks {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 0;
+    margin-left: 10%;
+    margin-top: 51px;
+    margin-bottom: 0px;
+    border-radius: 1px;
+    list-style-type: none;
+  }
+  .side-blocks {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    width: 70%;
+    padding: 0;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0px;
+    border-radius: 1px;
+  }
+  .page-buttons1 {
+    display: flex;
+    margin-left: 149px;
+    margin-top: 0px;
+    height: 36px;
+  }
+  .page-buttons2 {
+    display: none;
+  }
+  .button1 {
+    background-color: var(--pagebutton);
+    height: 100%;
+    width: 34px;
+    border: 1px solid var(--pagebuttonborder);
+    color: var(--pagebuttonwhite1);
+    font-family: "Oswald";
+    font-size: 15px;
+    font-weight: 300;
+    transition: 0.3s;
+  }
+  .button2 {
+    background-color: #ffffff;
+    height: 100%;
+    width: 35px;
+    border: none;
+    color: #444444;
+    font-family: "Oswald";
+    font-size: 15px;
+    margin-left: 5px;
+    padding: 0;
+    border: 1px solid var(--pagebuttonborder);
+    font-size: 15px;
+    transition: 0.3s;
+  }
+  .button3 {
+    background-color: #ffffff;
+    height: 100%;
+    width: 35px;
+    border: none;
+    color: #444444;
+    font-family: "Oswald";
+    font-size: 15px;
+    margin-left: 5px;
+    padding: 0;
+    border: 1px solid var(--pagebuttonborder);
+    font-size: 15px;
+    margin-bottom: 1px;
+    transition: 0.3s;
+  }
+  .button4 {
+    background-color: #ffffff;
+    height: 100%;
+    width: 35px;
+    border: none;
+    color: #444444;
+    font-family: "Oswald";
+    font-size: 15px;
+    margin-left: 5px;
+    padding: 0;
+    border: 1px solid var(--pagebuttonborder);
+    font-size: 15px;
+    margin-bottom: 2px;
+    transition: 0.3s;
+  }
+  .button5 {
+    background-color: #ffffff;
+    height: 100%;
+    width: 35px;
+    border: none;
+    color: #444444;
+    font-family: "Oswald";
+    font-size: 15px;
+    font-weight: bolder;
+    margin-left: 5px;
+    padding: 0;
+    border: 1px solid var(--pagebuttonborder);
+    font-size: 15px;
+    margin-bottom: 1px;
+    width: 42px;
+    transition: 0.3s;
+  }
+  .profilepic {
+    height: 194px;
+    width: 40%;
+    z-index: 20;
+    border: 7px solid #ffffff;
+    border-radius: 100%;
+    position: absolute;
+    margin-top: 108px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@media (min-width: 1160px) {
+  .page-buttons1 {
+    display: none;
   }
 }
